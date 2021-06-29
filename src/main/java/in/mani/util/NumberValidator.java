@@ -12,7 +12,7 @@ public class NumberValidator {
 	 * 
 	 * @param mobileNumber
 	 */
-	public void isValidNumber(int number) {
+	public static void isValidNumber(int number) {
 
 		if (number == 0 || number < 0 || number > 2147483647) {
 			throw new ValidationException("Number should not be Negative");

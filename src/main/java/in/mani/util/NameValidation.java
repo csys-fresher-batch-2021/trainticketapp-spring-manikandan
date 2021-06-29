@@ -14,7 +14,7 @@ public class NameValidation {
 	 * This Method is used to validate Name Fields
 	 * @param name
 	 */
-	public void isValidName(String name) {
+	public static void isValidName(String name) {
 		if (name == null || name.trim().equals("")) {
 			throw new ValidationException("Name Field should not be Empty");
 		}

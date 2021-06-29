@@ -37,7 +37,6 @@ public class TrainController {
 		} catch (Exception e) {
 			Message message = new Message();
 			message.setErrorMessage(e.getMessage());
-			System.out.println("Insider Controller Catch Block :"+ e.getMessage());
 			return new ResponseEntity<>(message, HttpStatus.BAD_REQUEST);
 		}
 	}
